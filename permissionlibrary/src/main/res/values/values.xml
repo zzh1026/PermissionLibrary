@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--提示的弹窗colorfilter-->
+    <color name="permissionColorGreen">#41c236</color>
+    <color name="permissionColorWhite">#ffffff</color>
+    <color name="permissionBgColorGreenLight">#44A49C</color>
+
+    <!--提示的弹窗动画风格-->
+    <style name="PermissionAnimFade">
+        <item name="android:windowEnterAnimation">@anim/fade_in</item>
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
+    </style>
+
+    <style name="PermissionAnimModal">
+        <item name="android:windowEnterAnimation">@anim/modal_in</item>
+        <item name="android:windowExitAnimation">@anim/modal_out</item>
+    </style>
+
+    <style name="PermissionAnimScale">
+        <item name="android:windowEnterAnimation">@anim/scale_in</item>
+        <item name="android:windowExitAnimation">@anim/scale_out</item>
+    </style>
+
+    <!--提示的背景风格-->
+    <style name="PermissionBaseWhiteStyle">
+        <item name="PermissionTitleColor">@color/permissionColorWhite</item>
+        <item name="PermissionMsgColor">@color/permissionColorWhite</item>
+        <item name="PermissionItemTextColor">@color/permissionColorWhite</item>
+        <item name="PermissionButtonTextColor">@color/permissionColorWhite</item>
+        <item name="PermissionIconFilterColor">@color/permissionColorWhite</item>
+    </style>
+
+    <style name="PermissionDefaultBlueStyle" parent="PermissionBaseWhiteStyle">
+        <item name="PermissionButtonBackground">@drawable/shape_btn_border_white</item>
+        <item name="PermissionBackround">@drawable/shape_btn_blue</item>
+    </style>
+
+    <style name="PermissionDefaultGreenStyle" parent="PermissionBaseWhiteStyle">
+        <item name="PermissionButtonBackground">@drawable/shape_btn_green_light</item>
+        <item name="PermissionBackround">@drawable/permission_card1</item>
+        <item name="PermissionBgFilterColor">@color/permissionBgColorGreenLight</item>
+    </style>
+
+    <style name="PermissionDefaultNormalStyle">
+        <item name="PermissionTitleColor">#737373</item>
+        <item name="PermissionMsgColor">#737373</item>
+        <item name="PermissionItemTextColor">#737373</item>
+        <item name="PermissionButtonBackground">@drawable/shape_btn_next</item>
+        <item name="PermissionBackround">@drawable/shape_bg_white</item>
+        <item name="PermissionButtonTextColor">@android:color/white</item>
+        <item name="PermissionIconFilterColor">@color/permissionColorGreen</item>
+    </style>
+
+    <!--各个颜色设置的条目 可设置 8 种-->
+    <!--标题字体颜色-->
+    <attr name="PermissionTitleColor" format="color"></attr>
+    <!--内容提示字体颜色-->
+    <attr name="PermissionMsgColor" format="color"></attr>
+    <!--每个条目字体颜色-->
+    <attr name="PermissionItemTextColor" format="color"></attr>
+    <!--按钮字体颜色-->
+    <attr name="PermissionButtonTextColor" format="color"></attr>
+    <!--按钮的背景颜色-->
+    <attr name="PermissionButtonBackground" format="reference"></attr>
+    <!--dialog的背景颜色-->
+    <attr name="PermissionBackround" format="reference"></attr>
+    <!--图标背景颜色过滤器,用来控制图标的颜色-->
+    <attr name="PermissionIconFilterColor" format="color"></attr>
+    <!--背景颜色过滤器, 当 图片为 可变化的颜色的那张图的时候 可以使用这个 , 否则不需要设置该图-->
+    <attr name="PermissionBgFilterColor" format="color"></attr>
+</resources>
